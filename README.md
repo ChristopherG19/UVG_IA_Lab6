@@ -32,4 +32,8 @@ Nos basamos en los valores relevantes que posean menos dispersión en sus datos,
 
 ¿Cual es la implementación que fue mejor? ¿Por qué?
 
-Para el caso de la implementación de regresión se puede decir que la implementación con mejores resultados fue la que implementa SKlearn, esto debido a que eran respuestas menos engorrosas, más acertadas y comparando las respuestas finales pues el moodeilo implementado por librerias tenia más constancia en sus respuestas. Además de que era más fácil tener en mente la variable objetivo y sus características principales.
+Para el caso de la implementación de regresión se puede decir que la implementación con mejores resultados fue la que implementa SKlearn, esto debido a que eran respuestas menos engorrosas, más acertadas y comparando las respuestas finales pues el modelo implementado por librerias tenia más constancia en sus respuestas. Además de que era más fácil tener en mente la variable objetivo y sus características principales.
+
+Cabe mencionar que para evitar el overfeeding se evitó utilizar muchas features, y también se usó un deaph default de 5. 
+
+En el caso de estos datos se tuvo que hacer un gran proceso de limpieza. Primero y el más relevante era que muchas de las columnas tenían ingresados datos como 78 + 2 en vez de 80, por lo que se realizaron los debidos cálculos y las columnas fueron convertidas a de int64. También nos dimos cuenta de que habían datos faltantes en ciertos features de ciertas entradas. Investigando un poco el patrón y los datos se notó que estos eran datos de porteros, por lo que se decidió eliminar los features en vez de hacer un promedio con las variables o en vez de eliminar esas filas. 
